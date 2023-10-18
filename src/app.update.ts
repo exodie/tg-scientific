@@ -9,7 +9,7 @@ export class AppUpdate {
 
   @Start()
   async startCmd(ctx: Context) {
-    ctx.reply(
+    await ctx.reply(
       '- You can use /help for given more information\n' +
         '- Now you can choose?',
       actionButtons(),
